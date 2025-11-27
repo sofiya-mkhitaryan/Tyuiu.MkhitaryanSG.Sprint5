@@ -8,8 +8,12 @@ namespace Tyuiu.MkhitaryanSG.Sprint5.Task7.V1.Lib
         {
             // Читаем содержимое файла
             string content = File.ReadAllText(path);
+
             // Удаляем все цифры из содержимого
-            string result = Regex.Replace(content, @"d", "");
+            string result = Regex.Replace(content, @"d+", "");
+
+            // Удаляем лишние пробелы, если они появились после удаления цифр
+            result = Regex.Replace(result, @"s+", " ").Trim();
 
             // Сохраняем файл во временной директории
             string tempDirectory = Path.GetTempPath();
