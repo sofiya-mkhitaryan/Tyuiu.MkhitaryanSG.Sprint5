@@ -22,13 +22,11 @@ namespace Tyuiu.MkhitaryanSG.Sprint4.Task15.V7
             Console.WriteLine("* Выполнил: Мхитарян София Геворковна | РППб25-1                          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дано выражение вычислить его значение при x = 3, результат сохранить    *");
-            Console.WriteLine("* в бинарный файл OutPutFileTask3.bin и вывести на консоль.               *");
+            Console.WriteLine("* Дано выражение вычислить его значение по формуле.                       *");
             Console.WriteLine("* Округлить до трёх знаков после запятой.                                 *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("x = " + x);
 
             string path = @"C:\DataSprint5\InPutDataFileTask4V15.txt";
             Console.WriteLine("Данные находятся в файле " + path);
