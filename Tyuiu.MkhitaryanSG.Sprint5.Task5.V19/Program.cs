@@ -12,7 +12,7 @@ namespace Tyuiu.MkhitaryanSG.Sprint5.Task5.V19
             Console.Title = "Спринт 5 | Выполнила: Мхитарян С.Г. | РППб25-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
-            Console.WriteLine("* Тема: Чтение данных из текстового файла                                 *");
+            Console.WriteLine("* Тема: Чтение набора данных из текстового файла                          *");
             Console.WriteLine("* Задание #5                                                              *");
             Console.WriteLine("* Вариант #19                                                             *");
             Console.WriteLine("* Выполнил: Мхитарян София Геворковна | РППб25-1                          *");
