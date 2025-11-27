@@ -6,24 +6,19 @@ namespace Tyuiu.MkhitaryanSG.Sprint5.Task7.V1.Lib
     {
         public string LoadDataAndSave(string path)
         {
-            // Читаем содержимое файла
             string content = File.ReadAllText(path);
 
-            // Удаляем все цифры из содержимого
             string result = Regex.Replace(content, @"\d", "");
+            result = Regex.Replace(result, @"\s+", " ").Trim();
+            result = Regex.Replace(result, @"\s+([.,;:!?\)])", "$1");
 
-            // Удаляем лишние пробелы (заменяем несколько пробелов на один)
-            result = Regex.Replace(result, @"s+", " ").Trim();
-
-            // Сохраняем файл во временной директории
             string tempDirectory = Path.GetTempPath();
             string newFileName = "OutPutDataFileTask7V1.txt";
             string newPath = Path.Combine(tempDirectory, newFileName);
 
-            // Записываем результат в новый файл
             File.WriteAllText(newPath, result);
 
-            return newPath;  // Возвращаем путь к новому файлу
+            return newPath;
         }
     }
 }
