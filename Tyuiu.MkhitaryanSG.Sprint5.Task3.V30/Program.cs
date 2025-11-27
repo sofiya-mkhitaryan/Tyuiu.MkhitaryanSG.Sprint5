@@ -2,7 +2,7 @@
 //Округлить до трёх знаков после запятой.
 using Tyuiu.MkhitaryanSG.Sprint5.Task3.V30.Lib;
 
-namespace Tyuiu.MkhitaryanSG.Sprint3.Task30.V7
+namespace Tyuiu.MkhitaryanSG.Sprint5.Task3.V30
 {
     class Program
     {
