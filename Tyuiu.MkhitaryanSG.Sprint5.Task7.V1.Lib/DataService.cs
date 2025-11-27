@@ -10,9 +10,13 @@ namespace Tyuiu.MkhitaryanSG.Sprint5.Task7.V1.Lib
 
             string result = Regex.Replace(content, @"\d", "");
 
-            File.WriteAllText(path, result);
+            string directory = Path.GetDirectoryName(path);
+            string newFileName = "OutPutDataFileTask7V1.txt";
+            string newPath = Path.Combine(directory, newFileName);
 
-            return result;
+            File.WriteAllText(newPath, result);
+
+            return newPath;  // Возвращаем путь к новому файлу
         }
     }
 }
