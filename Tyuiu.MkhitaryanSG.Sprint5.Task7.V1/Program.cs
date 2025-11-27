@@ -33,15 +33,8 @@ namespace Tyuiu.MkhitaryanSG.Sprint5.Task7.V1
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            try
-            {
-                string outputFilePath = ds.LoadDataAndSave(path);
-                Console.WriteLine("Данные сохранены в: " + outputFilePath);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Произошла ошибка: " + ex.Message);
-            }
+            string outputFilePath = ds.LoadDataAndSave(path);
+            Console.WriteLine("Данные сохранены в: " + outputFilePath);
 
             Console.ReadKey();
         }

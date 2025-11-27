@@ -6,7 +6,9 @@ namespace Tyuiu.MkhitaryanSG.Sprint5.Task7.V1.Lib
     {
         public string LoadDataAndSave(string path)
         {
+            // Читаем содержимое файла
             string content = File.ReadAllText(path);
+            // Удаляем все цифры из содержимого
             string result = Regex.Replace(content, @"d", "");
 
             // Сохраняем файл во временной директории
@@ -14,6 +16,7 @@ namespace Tyuiu.MkhitaryanSG.Sprint5.Task7.V1.Lib
             string newFileName = "OutPutDataFileTask7V1.txt";
             string newPath = Path.Combine(tempDirectory, newFileName);
 
+            // Записываем результат в новый файл
             File.WriteAllText(newPath, result);
 
             return newPath;  // Возвращаем путь к новому файлу
