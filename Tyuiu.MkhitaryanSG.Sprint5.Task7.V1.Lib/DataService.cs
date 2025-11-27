@@ -12,6 +12,9 @@ namespace Tyuiu.MkhitaryanSG.Sprint5.Task7.V1.Lib
             // Удаляем все цифры из содержимого
             string result = Regex.Replace(content, @"\d", "");
 
+            result = Regex.Replace(result, @"\s", " ").Trim();
+            result = Regex.Replace(result, @"\s", ".").Trim();
+
             // Сохраняем файл во временной директории
             string tempDirectory = Path.GetTempPath();
             string newFileName = "OutPutDataFileTask7V1.txt";
