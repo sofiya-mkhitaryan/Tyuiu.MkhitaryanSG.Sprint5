@@ -7,12 +7,12 @@ namespace Tyuiu.MkhitaryanSG.Sprint5.Task7.V1.Lib
         public string LoadDataAndSave(string path)
         {
             string content = File.ReadAllText(path);
+            string result = Regex.Replace(content, @"d", "");
 
-            string result = Regex.Replace(content, @"\d", "");
-
-            string directory = Path.GetDirectoryName(path);
+            // Сохраняем файл во временной директории
+            string tempDirectory = Path.GetTempPath();
             string newFileName = "OutPutDataFileTask7V1.txt";
-            string newPath = Path.Combine(directory, newFileName);
+            string newPath = Path.Combine(tempDirectory, newFileName);
 
             File.WriteAllText(newPath, result);
 
