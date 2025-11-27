@@ -33,7 +33,6 @@ namespace Tyuiu.MkhitaryanSG.Sprint5.Task7.V1
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Находятся в файле: ");
             savepath = ds.LoadDataAndSave(path);
             Console.WriteLine(savepath);
             Console.ReadKey();
