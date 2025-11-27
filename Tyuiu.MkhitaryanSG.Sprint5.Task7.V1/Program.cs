@@ -33,9 +33,8 @@ namespace Tyuiu.MkhitaryanSG.Sprint5.Task7.V1
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            savepath = ds.LoadDataAndSave(path);
-            Console.WriteLine(savepath);
-            Console.ReadKey();
+            string resultText = ds.LoadDataAndSave(path);
+            Console.WriteLine(resultText);
         }
     }
 }
