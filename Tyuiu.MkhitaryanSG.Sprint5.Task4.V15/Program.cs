@@ -5,13 +5,12 @@
 //вернуть полученный результат на консоль.
 using Tyuiu.MkhitaryanSG.Sprint5.Task4.V15.Lib;
 
-namespace Tyuiu.MkhitaryanSG.Sprint4.Task15.V7
+namespace Tyuiu.MkhitaryanSG.Sprint5.Task4.V15
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int x = 3;
             DataService ds = new DataService();
             Console.Title = "Спринт 5 | Выполнила: Мхитарян С.Г. | РППб25-1";
             Console.WriteLine("***************************************************************************");
