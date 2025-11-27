@@ -10,7 +10,7 @@ namespace Tyuiu.MkhitaryanSG.Sprint5.Task7.V1.Lib
             string content = File.ReadAllText(path);
 
             // Удаляем все цифры из содержимого
-            string result = Regex.Replace(content, @"d", "");
+            string result = Regex.Replace(content, @"\d", "");
 
             // Удаляем лишние пробелы (заменяем несколько пробелов на один)
             result = Regex.Replace(result, @"s+", " ").Trim();
