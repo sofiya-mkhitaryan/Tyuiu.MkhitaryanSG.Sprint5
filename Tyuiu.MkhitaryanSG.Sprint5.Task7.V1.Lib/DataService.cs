@@ -8,10 +8,10 @@ namespace Tyuiu.MkhitaryanSG.Sprint5.Task7.V1.Lib
         {
             string content = File.ReadAllText(path);
 
-            string result = Regex.Replace(content, @"\d", "");
-            result = Regex.Replace(result, @"\s+", " ").Trim();
-            result = Regex.Replace(result, @"\s+([.,;:!?\)])", "$1");
-            result = Regex.Replace(result, @"[.,;:!?\)]+$", "");
+            string result = Regex.Replace(content, "\\d", "");
+            result = Regex.Replace(result, "\\s+", " ").Trim();
+            result = Regex.Replace(result, "\\s+([.,;:!?\\)])", "$1");
+            result = Regex.Replace(result, "[.,;:!?\\)]+$", "");
 
             string tempDirectory = Path.GetTempPath();
             string newFileName = "OutPutDataFileTask7V1.txt";
