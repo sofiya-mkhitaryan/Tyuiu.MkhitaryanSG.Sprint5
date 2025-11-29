@@ -8,7 +8,7 @@ namespace Tyuiu.MkhitaryanSG.Sprint5.Task7.V1.Test
 
         public void TestMethod2()
         {
-            string path = @"C:\DataSprint5\InPutDataFileTask7V1.txt";
+            string path = "C:\\DataSprint5\\InPutDataFileTask7V1.txt";
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
